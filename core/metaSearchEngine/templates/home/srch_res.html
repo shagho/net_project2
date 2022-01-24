@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+
+{% block head %}
+  <title>Result</title>
+{% endblock %}
+
+{% block body%}
+<h1 align="center">Result</h1>
+<div class="container" style="size: 20px; margin-top: auto; margin-bottom:auto">
+	<br>
+	<br>
+	{% for title, link in search %}
+      	        <h4>{{title}}</h4>
+		<b><a margin:35px href={{link}}> {{link}}</a></b>
+		<br>
+		<br>
+	{% endfor %}
+</div>
+{% endblock %}

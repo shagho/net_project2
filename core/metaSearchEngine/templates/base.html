@@ -1,0 +1,16 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	{% block head %}
+	<title>Base</title>
+	{% endblock %}
+</head>
+<body style="background-image: url('{% static 'background.jpg' %}')">
+	{% block body %}
+		<h1>Base</h1>
+		{% endblock %}
+</body>
+</html>
